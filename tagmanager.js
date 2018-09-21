@@ -483,11 +483,7 @@
             $self.focus();
           } // why?
 
-          /* unimplemented mode to push tag on blur
-           else if (tagManagerOptions.pushTagOnBlur) {
-           console.log('change: pushTagOnBlur ' + tag);
-           pushTag($(this).val());
-           } */
+          publicMethods.pushTag.call($self, $(this).val());
           privateMethods.killEvent(e);
         });
 
