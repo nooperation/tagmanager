@@ -476,6 +476,9 @@
           $self.on('tm:popped', function (e, tag) {
             $(this).val(tag);
           });
+          $self.on('tm:spliced', function (e, tag) {
+            $(this).val(tag);
+          });
         }
 
         $self.change(function (e) {
